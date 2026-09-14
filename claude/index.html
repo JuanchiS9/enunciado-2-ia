@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instituto de Idiomas - Cursos de Inglés y Francés</title>
+  <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+
+  <header class="cabecera">
+    <h1>Instituto de Idiomas</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Catálogo de Cursos</a></li>
+        <li><a href="#mantenedor">Quién Mantiene el Sitio</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="inicio" class="seccion">
+      <h2>Bienvenido</h2>
+      <p>Aprendé Inglés y Francés con nuestros cursos organizados por nivel: Principiante, Intermedio y Avanzado. Consultá el catálogo, descargá el programa de cada curso y contactanos ante cualquier consulta.</p>
+    </section>
+
+    <section id="catalogo" class="seccion">
+      <h2>Catálogo de Cursos</h2>
+
+      <!-- Selector estático de categoría mediante radio buttons -->
+      <div class="selector-categoria">
+        <input type="radio" id="tab-ingles" name="categoria-tabs" checked>
+        <input type="radio" id="tab-frances" name="categoria-tabs">
+
+        <div class="tabs-labels">
+          <label for="tab-ingles" class="tab-label">Inglés</label>
+          <label for="tab-frances" class="tab-label">Francés</label>
+        </div>
+
+        <div class="tabs-contenido">
+
+          <div class="panel-categoria panel-ingles">
+            <h3>Cursos de Inglés</h3>
+            <div class="lista-cursos">
+
+              <article class="curso-card">
+                <h4>INGLÉS-PRINCIPIANTE</h4>
+                <a class="enlace-programa" href="programas/ingles-principiante.pdf" target="_blank" rel="noopener">Ver programa del curso (PDF)</a>
+              </article>
+
+              <article class="curso-card">
+                <h4>INGLÉS-INTERMEDIO</h4>
+                <a class="enlace-programa" href="programas/ingles-intermedio.pdf" target="_blank" rel="noopener">Ver programa del curso (PDF)</a>
+              </article>
+
+              <article class="curso-card">
+                <h4>INGLÉS-AVANZADO</h4>
+                <a class="enlace-programa" href="programas/ingles-avanzado.pdf" target="_blank" rel="noopener">Ver programa del curso (PDF)</a>
+              </article>
+
+            </div>
+          </div>
+
+          <div class="panel-categoria panel-frances">
+            <h3>Cursos de Francés</h3>
+            <div class="lista-cursos">
+
+              <article class="curso-card">
+                <h4>FRANCÉS-PRINCIPIANTE</h4>
+                <a class="enlace-programa" href="programas/frances-principiante.pdf" target="_blank" rel="noopener">Ver programa del curso (PDF)</a>
+              </article>
+
+              <article class="curso-card">
+                <h4>FRANCÉS-INTERMEDIO</h4>
+                <a class="enlace-programa" href="programas/frances-intermedio.pdf" target="_blank" rel="noopener">Ver programa del curso (PDF)</a>
+              </article>
+
+              <article class="curso-card">
+                <h4>FRANCÉS-AVANZADO</h4>
+                <a class="enlace-programa" href="programas/frances-avanzado.pdf" target="_blank" rel="noopener">Ver programa del curso (PDF)</a>
+              </article>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="mantenedor" class="seccion">
+      <h2>¿Quién mantiene este sitio?</h2>
+      <p>Sitio mantenido por el equipo de desarrollo web de Institución X.</p>
+      <p>Nuestro equipo se encarga de mantener actualizada la información de los cursos y los programas disponibles para descarga.</p>
+    </section>
+
+    <section id="contacto" class="seccion">
+      <h2>Contacto</h2>
+      <p>¿Tenés dudas sobre algún curso? Completá el siguiente formulario y nos pondremos en contacto con vos.</p>
+
+      <form class="formulario-contacto" action="#" method="post">
+        <div class="campo-formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu consulta aquí" required></textarea>
+        </div>
+
+        <button type="submit" class="boton-enviar">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <p>&copy; 2026 Instituto de Idiomas. Sitio mantenido por el equipo de desarrollo web de Institución X.</p>
+  </footer>
+
+</body>
+</html>
