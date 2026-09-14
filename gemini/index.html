@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos de Idiomas</title>
+    <link rel="stylesheet" href="estilosIA.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#mantenedor">Quiénes Somos</a></li>
+            <li><a href="#cursos">Catálogo de Cursos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Aprende Inglés y Francés</h1>
+        <p>Selecciona la categoría que deseas cursar y descarga tu programa</p>
+    </header>
+
+    <main>
+        <!-- SECCIÓN CURSOS -->
+        <section id="cursos" class="seccion">
+            <h2>Catálogo de Cursos</h2>
+            
+            <div class="selector-categorias">
+                <!-- Radio buttons para seleccionar la categoría (Sin JS) -->
+                <input type="radio" id="radio-ingles" name="categoria" checked>
+                <input type="radio" id="radio-frances" name="categoria">
+
+                <!-- Pestañas -->
+                <div class="tabs">
+                    <label for="radio-ingles" class="tab-label">Cursos de Inglés</label>
+                    <label for="radio-frances" class="tab-label">Cursos de Francés</label>
+                </div>
+
+                <!-- Contenedor Inglés -->
+                <div class="contenedor-cursos" id="cursos-ingles">
+                    <div class="curso-bloque">
+                        <p class="curso-titulo">INGLÉS - PRINCIPIANTE</p>
+                        <a class="curso-enlace" href="programas/ingles-principiante.pdf" target="_blank">Descargar programa del curso</a>
+                    </div>
+                    <div class="curso-bloque">
+                        <p class="curso-titulo">INGLÉS - INTERMEDIO</p>
+                        <a class="curso-enlace" href="programas/ingles-intermedio.pdf" target="_blank">Descargar programa del curso</a>
+                    </div>
+                    <div class="curso-bloque">
+                        <p class="curso-titulo">INGLÉS - AVANZADO</p>
+                        <a class="curso-enlace" href="programas/ingles-avanzado.pdf" target="_blank">Descargar programa del curso</a>
+                    </div>
+                </div>
+
+                <!-- Contenedor Francés -->
+                <div class="contenedor-cursos" id="cursos-frances">
+                    <div class="curso-bloque">
+                        <p class="curso-titulo">FRANCÉS - PRINCIPIANTE</p>
+                        <a class="curso-enlace" href="programas/frances-principiante.pdf" target="_blank">Descargar programa del curso</a>
+                    </div>
+                    <div class="curso-bloque">
+                        <p class="curso-titulo">FRANCÉS - INTERMEDIO</p>
+                        <a class="curso-enlace" href="programas/frances-intermedio.pdf" target="_blank">Descargar programa del curso</a>
+                    </div>
+                    <div class="curso-bloque">
+                        <p class="curso-titulo">FRANCÉS - AVANZADO</p>
+                        <a class="curso-enlace" href="programas/frances-avanzado.pdf" target="_blank">Descargar programa del curso</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="seccion">
+            <h2>Información de Contacto</h2>
+            <form action="#" method="POST" class="formulario">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </section>
+
+        <!-- SECCIÓN MANTENEDOR -->
+        <section id="mantenedor" class="seccion">
+            <h2>Quién mantiene el sitio</h2>
+            <p>Sitio mantenido por el equipo de desarrollo web de Institución X.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Institución X. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
